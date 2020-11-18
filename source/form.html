@@ -33,7 +33,7 @@
   </nav>
 </header>
 <main class="page-main">
-  <h1 class="page-main__heading">Подбор программы</h1>
+  <h1 class="main-heading">Подбор программы</h1>
   <section class="form">
     <p class="form__tagline">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <!--TODO починить форму-->
@@ -59,16 +59,16 @@
         <legend class="visually-hidden">Цель питания</legend>
         <ul class="cat-info__list">
           <li class="cat-info__item">
-            <label class="cat-info__label" for="cat-slim">Имя:*</label>
-            <input class="cat-info__input-text" type="radio" id="cat-slim" name="food-goal">
+            <label class="cat-info__label" for="cat-slim">Похудение</label>
+            <input class="cat-info__radio visually-hidden" type="radio" id="cat-slim" name="food-goal">
           </li>
           <li class="cat-info__item">
-            <label class="cat-info__label" for="cat-mass">Вес(кг):*</label>
-            <input class="cat-info__input-text" type="radio" id="cat-mass" name="food-goal">
+            <label class="cat-info__label" for="cat-mass">Набор массы</label>
+            <input class="cat-info__radio visually-hidden" type="radio" id="cat-mass" name="food-goal">
           </li>
           <li class="cat-info__item">
-            <label class="cat-info__label" for="cat-unknown">Возраст(лет):</label>
-            <input class="cat-info__input-text" type="radio" id="cat-unknown" name="food-goal">
+            <label class="cat-info__label" for="cat-unknown">Не знаю (Нужен ваш совет)</label>
+            <input class="cat-info__radio visually-hidden" type="radio" id="cat-unknown" name="food-goal">
           </li>
         </ul>
       </fieldset>
@@ -81,14 +81,14 @@
           </li>
           <li class="cat-info__item">
             <label class="cat-info__label cat-info__label--phone" for="cat-phone">Телефон:*</label>
-            <input class="cat-info__input-text" type="text" id="cat-phone" value="8 (960) 900-60-90">
+            <input class="cat-info__input-text" type="tel" id="cat-phone" value="8 (960) 900-60-90">
           </li>
         </ul>
       </fieldset>
       <fieldset class="cat-info__form">
         <legend class="cat-info__legend">Комментарий</legend>
         <textarea class="cat-info__input-text cat-info__input-text--comment"
-                  value="Расскажите обо всех повадках кота"></textarea>
+                  placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="cat-info__form">
         <legend class="cat-info__legend">Дополнительно</legend>
@@ -99,15 +99,15 @@
           </li>
           <li class="cat-info__item">
             <label class="cat-info__label" for="water">Питьевая вода</label>
-            <input class="cat-info__input-text" type="checkbox" id="water">
+            <input class="cat-info__checkbox visually-hidden" type="checkbox" id="water">
           </li>
           <li class="cat-info__item">
             <label class="cat-info__label" for="milk">Молоко</label>
-            <input class="cat-info__input-text" type="checkbox" id="milk">
+            <input class="cat-info__checkbox visually-hidden" type="checkbox" id="milk">
           </li>
           <li class="cat-info__item">
             <label class="cat-info__label" for="vitamins">Витамины</label>
-            <input class="cat-info__input-text" type="checkbox" id="vitamins">
+            <input class="cat-info__checkbox visually-hidden" type="checkbox" id="vitamins">
           </li>
         </ul>
       </fieldset>
