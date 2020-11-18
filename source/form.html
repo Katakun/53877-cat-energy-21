@@ -44,15 +44,15 @@
         <ul class="cat-info__list">
           <li class="cat-info__item">
             <label class="cat-info__label" for="cat-name">Имя*:</label>
-            <input class="cat-info__input-text" type="text" value="Барсик" id="cat-name">
+            <input class="cat-info__input-text" type="text" value="Барсик" id="cat-name"  name="cat-name" required>
           </li>
           <li class="cat-info__item">
             <label class="cat-info__label" for="cat-weight">Вес(кг)*:</label>
-            <input class="cat-info__input-text" type="number" value="7" id="cat-weight">
+            <input class="cat-info__input-text" type="number" value="7" id="cat-weight"  name="cat-weight" required>
           </li>
           <li class="cat-info__item">
             <label class="cat-info__label" for="cat-age">Возраст(лет):</label>
-            <input class="cat-info__input-text" type="number" value="7" id="cat-age">
+            <input class="cat-info__input-text" type="number" value="7" id="cat-age" name="cat-age">
           </li>
         </ul>
       </fieldset>
@@ -61,15 +61,15 @@
         <ul class="cat-info__list">
           <li class="cat-info__item">
             <label class="cat-info__label" for="cat-slim">Похудение</label>
-            <input class="cat-info__radio visually-hidden" type="radio" id="cat-slim" name="food-goal">
+            <input class="cat-info__radio visually-hidden" type="radio" id="cat-slim" name="food-goal" value="slim" checked>
           </li>
           <li class="cat-info__item">
             <label class="cat-info__label" for="cat-mass">Набор массы</label>
-            <input class="cat-info__radio visually-hidden" type="radio" id="cat-mass" name="food-goal">
+            <input class="cat-info__radio visually-hidden" type="radio" id="cat-mass" name="food-goal" value="mass">
           </li>
           <li class="cat-info__item">
             <label class="cat-info__label" for="cat-unknown">Не знаю (Нужен ваш совет)</label>
-            <input class="cat-info__radio visually-hidden" type="radio" id="cat-unknown" name="food-goal">
+            <input class="cat-info__radio visually-hidden" type="radio" id="cat-unknown" name="food-goal" value="unknown">
           </li>
         </ul>
       </fieldset>
@@ -78,37 +78,37 @@
         <ul class="cat-info__list">
           <li class="cat-info__item">
             <label class="cat-info__label cat-info__label--mail" for="cat-mail">E-mail:*</label>
-            <input class="cat-info__input-text" type="email" id="cat-mail" value="kuklachev@gmail.com">
+            <input class="cat-info__input-text" type="email" id="cat-mail" value="kuklachev@gmail.com" name="cat-mail" required>
           </li>
           <li class="cat-info__item">
             <label class="cat-info__label cat-info__label--phone" for="cat-phone">Телефон:*</label>
-            <input class="cat-info__input-text" type="tel" id="cat-phone" value="8 (960) 900-60-90">
+            <input class="cat-info__input-text" type="tel" id="cat-phone" value="8 (960) 900-60-90" name="cat-phone" required>
           </li>
         </ul>
       </fieldset>
       <fieldset class="cat-info__form">
         <legend class="cat-info__legend">Комментарий</legend>
         <textarea class="cat-info__input-text cat-info__input-text--comment"
-                  placeholder="Расскажите обо всех повадках кота"></textarea>
+                  placeholder="Расскажите обо всех повадках кота" name="comment"></textarea>
       </fieldset>
       <fieldset class="cat-info__form">
         <legend class="cat-info__legend">Дополнительно</legend>
         <ul class="cat-info__list">
           <li class="cat-info__item">
             <label class="cat-info__label" for="sweetener">Сахарозаменитель</label>
-            <input class="cat-info__input-text" type="checkbox" id="sweetener" checked>
+            <input class="cat-info__input-text" type="checkbox" id="sweetener" name="sweetener" checked>
           </li>
           <li class="cat-info__item">
             <label class="cat-info__label" for="water">Питьевая вода</label>
-            <input class="cat-info__checkbox visually-hidden" type="checkbox" id="water">
+            <input class="cat-info__checkbox visually-hidden" type="checkbox" id="water" name="water">
           </li>
           <li class="cat-info__item">
             <label class="cat-info__label" for="milk">Молоко</label>
-            <input class="cat-info__checkbox visually-hidden" type="checkbox" id="milk">
+            <input class="cat-info__checkbox visually-hidden" type="checkbox" id="milk" name="milk">
           </li>
           <li class="cat-info__item">
             <label class="cat-info__label" for="vitamins">Витамины</label>
-            <input class="cat-info__checkbox visually-hidden" type="checkbox" id="vitamins">
+            <input class="cat-info__checkbox visually-hidden" type="checkbox" id="vitamins" name="vitamins">
           </li>
         </ul>
       </fieldset>
